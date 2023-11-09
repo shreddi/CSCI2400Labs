@@ -1,0 +1,8 @@
+make test01
+make rtest01
+
+figure 8.24
+
+sleep 100 &
+ps
+kill -9 128 //stop sleep

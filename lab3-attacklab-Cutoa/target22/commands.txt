@@ -1,0 +1,4 @@
+./hex2raw <ctarget.l2.txt> c2.raw
+gdb ctarget
+run < c2.raw
+cat ctarget.l3.txt | ./hex2raw | ./ctarget
